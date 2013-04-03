@@ -17,9 +17,9 @@ Version 1.0 - April 1, 2013 Presented by: Carlos Davila
 #API
 ###1. Adding and API
 
-a. Locate your API base URI (ex. [http://api.nytimes.com/svc/search/v1/article](http://api.nytimes.com/svc/search/v1/article "article search")
+a. Locate your API base URI (ex. http://api.nytimes.com/svc/search/v1/article "article search")
 
-b. Once you have located your API base URI proceed to adding an API
+b. Once you have located your API base URI, proceed to adding an API
 
 c. Select **APIs** under **Apiphany**
 
@@ -27,27 +27,26 @@ D. ![](http://i.imgur.com/G5XOgjN.png)
 
 e.	Click on ***add API***, a new screen will pop up allowing you to enter the following information
 
-f.	**Web API title**
+f.	   **Web API title**
 
-g.	**Web Serice URL**
+g.	   **Web Serice URL**
 
-h.	**Web API URL suffix**
+h.	   **Web API URL suffix**
 
 I.	![](http://i.imgur.com/p6GG8v1.png)
 
 
-j.	In the web API title text box, you can add any descriptive API title you like to define your API 
-(ex. ***The Article Search API***).
+j.	In the **web API title** text box, you can add any *descriptive* API title you like to define your API (ex. **The Article Search API**).
 
 k.	Each API entry requires being unique.
  
 l.	The only field that can be repetitive is the ***web services URL***
 
-m.	***Web API title*** requires to be unique defines your API
+m.	**Web API title** requires to be unique, defines your API
 
-n.	***Web API URL suffix*** requires to be unique this is the public facing side of your API
+n.	**Web API URL suffix** requires to be unique this is the public facing side of your API
 
-o.	If a *non-unique* entry is made an error message will prompt you to which field has caused the invalid entry
+o.	If a *non-unique* entry is made an **error message** will prompt you to which field has caused the invalid entry
 
 p.![](http://i.imgur.com/LPztR0h.png)
 
@@ -55,7 +54,7 @@ q.	Once you have successfully made all your entries your API will be added as th
 
 r.![](http://i.imgur.com/ZMdKCJn.png)
 
-s.	Select your API to continue the configuration process; click on the ***API name*** or on the ***configure*** link. Either or will take you to the summary window
+s.	Select your API to continue the configuration process; click on the **API name** or on the **configure** link. Either or will take you to the summary window
 
 t.![](http://i.imgur.com/xLwMBNm.png)
 
@@ -68,25 +67,25 @@ v.	Click on **Settings** now you can verify the settings you just completed inpu
 #OPERATIONS:
 ###1. Signature
 
-a.	Click on **Operations** add your API http method and developers documentation
+a.	Click on **Operations** to add your http method, URI and developers documentation
 
 b. ![](http://i.imgur.com/0HdV690.png)
 
-###2.	When you click **add operation**, the following screen appears, **New Operation**.
+###2.	When you click *add operation*, the following screen appears, *New Operation*.
 
 a. ![](http://i.imgur.com/35crNLA.png)
 
 
-###3.	Select **signature**; this is where you define your URI. The **HTTP method** allows you to select from multiple request such as (GET, POST and Delete)
+###3.	Select *signature* then *HTTP method* a drop down appears which allows you to select from multiple request such as (GET, POST and Delete)
 
 a. ![](http://i.imgur.com/dJIigT3.png)
 
 
-###4.	Select “*GET*” enter your “URI Query” in the *URI template* box, an example is provided (*ex. /article?query={query}&api-key={apikey}*)
+###4.	Select “GET” enter your “URI Query” in the URI template box, an example is provided (*ex. /article?query={query}&api-key={apikey}*)
 
 a. ![](http://i.imgur.com/v3RjqKR.png)
 
-b.	You can use the ***Rewrite URI template**** to rewrite the query method, see example below. **This is an optional field**.
+b.	You can use the **Rewrite URI template*** to rewrite the query method, see example below. **This is an optional field**.
 
 c. ![](http://i.imgur.com/YOzk8kz.png)
 
