@@ -211,6 +211,3 @@ downstream-caching-type="none | private | public"
 </tr>
 </tbody>
 </table>
-
-
-
