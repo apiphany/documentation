@@ -8,7 +8,9 @@ This document defines each policy, how to use it and where policies can be imple
 
 ## Policy Editor ##
 
-**Description:** Policy statements MUST be enclosed within either <inbound> or <outbound> elements.- <base /> elements represent policy-in-effect inherited from the outer scopes.
+**Description:** 
+
+Policy statements MUST be enclosed within either <inbound> or <outbound> elements.- <base /> elements represent policy-in-effect inherited from the outer scopes.
          - <inbound> element contains policies to be applied in the inbound direction (from caller to web service).
          - <outbound> element contains policies to be applied in the outbound direction (from web service to caller).
          - Policies are applied in the order they appear.
@@ -17,7 +19,9 @@ To ADD a policy, position cursor in the policy document to specify the insertion
     To REMOVE a policy, delete the corresponding policy statement from the policy document.
     To RE-ORDER a policy, select the corresponding policy statement and cut-and-paste it into a new location within the policy document.
 
-**Policy Statement:** " < policies >, < inbound >, <base / >, < outbound >"
+**Policy Statement:** 
+
+" < policies >, < inbound >, <base / >, < outbound >"
 
 **Example:**
 
@@ -72,14 +76,15 @@ To ADD a policy, position cursor in the policy document to specify the insertion
 
 **Description:**
 
-**Policy Statement:** *<cache-store duration="seconds" caching-mode="cache-on | do-not-cache" />*
+**Policy Statement:** 
+
+*<cache-store duration="seconds" caching-mode="cache-on | do-not-cache" />*
 
 **Example:**
 
->   <inbound>
+>   	<inbound>
 >   	<base />
->	</inbound>
->	
+>		</inbound>>	
 > 	<outbound>
 > 		<base />
 > 		<cache-store duration="3600" caching-mode="cache-on" />
@@ -114,14 +119,16 @@ To ADD a policy, position cursor in the policy document to specify the insertion
 
 **Description:**
 
-**Policy Statement:** *<cache-lookup vary-by-developer="true | false" vary-by-developer-groups="true | false" downstream-caching-type="none| private | public">
-    <vary-by-header>Accept</vary-by-header> <!-- should be present in most cases -->
-    <vary-by-header>Accept-Charset</vary-by-header> <!-- should be present in most cases -->
-    <vary-by-header>header name</vary-by-header> <!-- optional, can repeated several times -->
-    <vary-by-query-parameter>parameter name</vary-by-query-parameter> <!-- optional, can repeated several times -->
-    </cache-lookup>*
+**Policy Statement:** 
 
-**Example:** 
+<cache-lookup vary-by-developer="true | false" vary-by-developer-groups="true | false" downstream-caching-type="none| private | public">
+<vary-by-header>Accept</vary-by-header>
+<vary-by-header>Accept-Charset</vary-by-header>
+<vary-by-header>header name</vary-by-header>
+<vary-by-query-parameter>parameter name</vary-by-query-parameter>
+</cache-lookup>
+
+**Example:**
 
 > 	<inbound>
 > 		<base />
@@ -182,10 +189,11 @@ downstream-caching-type="none | private | public"
 
 **Description:**
 
-**Policy Statement:** *<authentication-basic username="username" password="password" />*
+**Policy Statement:**
+
+*<authentication-basic username="username" password="password" />*
 
 **Example:**
-
 
 > 	<inbound>
 > 		<base />
@@ -212,6 +220,56 @@ downstream-caching-type="none | private | public"
 <tbody>
 <tr>
   <td>username="username" password="password"</td>
+  <td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+
+## Policy: Set query string parameters ##
+
+**Description:**
+
+**Policy Statement:**
+
+*<set-query-parameters>
+ <parameter name="param name" exists-action="override | skip | append">
+ <value>value</value>  </parameter> </set-query-parameters>*
+
+**Example:**
+
+
+> 	<set-query-parameters>
+			<parameter name="api_key" exists-action="skip">
+				<value>vwva3789ca6gs23kcvv2c77v</value>
+				<!-- for multiple parameters with the same name add additional value elements -->
+			</parameter>
+		</set-query-parameters>
+
+
+**Where it can be applied:**
+
+**When it should be applied:**
+
+**Why it should be applied, why not:**
+
+><table>
+<thead>
+<tr>
+  <th>Statement</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Parameter Name="name"</td>
+  <td>Content Cell</td>
+</tr>
+><tr>
+  <td>exists-action="override | skip | append"</td>
+  <td>Content Cell</td>
+</tr>
+><tr>
+  <td>Value="value"</td>
   <td>Content Cell</td>
 </tr>
 </tbody>
