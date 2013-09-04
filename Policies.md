@@ -20,9 +20,13 @@ To ADD a policy, position cursor in the policy document to specify the insertion
     To RE-ORDER a policy, select the corresponding policy statement and cut-and-paste it into a new location within the policy document.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Policy Statement:** 
 
 " < policies >, < inbound >, <base / >, < outbound >"
+=======
+**Policy Statement:** < policies >, < inbound >, < base / >, < outbound >
+>>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
 =======
 **Policy Statement:** < policies >, < inbound >, < base / >, < outbound >
 >>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
@@ -81,6 +85,7 @@ To ADD a policy, position cursor in the policy document to specify the insertion
 **Description:**
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Policy Statement:** 
 
 *<cache-store duration="seconds" caching-mode="cache-on | do-not-cache" />*
@@ -97,12 +102,21 @@ To ADD a policy, position cursor in the policy document to specify the insertion
 
 **Example:**
 
+=======
+**Policy Statement:** <cache-store duration="seconds" caching-mode="cache-on" | "do-not-cache /">
+
+**Example:**
+
+>>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
 >    <inbound>
 >             <base />
 >    </inbound>
 >	
 >    <outbound>
 > 	     <base />
+<<<<<<< HEAD
+>>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
+=======
 >>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
 > 		<cache-store duration="3600" caching-mode="cache-on" />
 >    </outbound>
@@ -145,8 +159,11 @@ To ADD a policy, position cursor in the policy document to specify the insertion
 <vary-by-query-parameter>parameter name</vary-by-query-parameter>
 </cache-lookup>
 
+<<<<<<< HEAD
 **Example:**
 
+=======
+>>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
 >        <inbound>
 > 	     <base />
 > 		<cache-lookup vary-by-developer="false" vary-by-developer-groups="false" downstream-caching-type="none">
@@ -242,6 +259,7 @@ downstream-caching-type="none | private | public"
 </tbody>
 </table>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Policy: Set query string parameters ##
 
@@ -292,5 +310,7 @@ downstream-caching-type="none | private | public"
 </tr>
 </tbody>
 </table>
+=======
+>>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
 =======
 >>>>>>> 53da2b19c5be0fd895df3003c044ff1e370dd25e
