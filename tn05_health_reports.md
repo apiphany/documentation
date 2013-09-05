@@ -1,7 +1,7 @@
 ![](images/logo.png)
 #Tech Note 5: How to View Health Reports
 
-The health reports show a number of performance metrics for a selected filter in a graph and over-the-map form. Information displayed on the map matches the time interval selection on the graph. The following reports are included in this group:  
+The health reports show a number of performance metrics, for a selected filter, in a graph and on-the-map form. Information displayed on the map matches the time interval selection on the graph. The following reports are included in this group:  
 
 **Status codes** report shows call counts broken into four groups according to the response status codes: successful, blocked, failed, and other. *Successful* calls have status code values under `302` or equal `304` or `307`. *Blocked* calls are the calls that have not been forwarded to the API due to, for example, authorization failure or quota violation. *Failed* calls are the ones with status codes of `500` and above. All remaining calls are counted in the *Other* group.  
 
